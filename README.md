@@ -3,6 +3,7 @@ Header-only library that offers cross platform tools and more usable functions t
 Crossplatform C++ library (c++17)
 
 ## Garbage collected containers with smart pointers:
+  - Thread-safe, no locks, uses compare and swap (CAS) instead,
   - Strong and Weak pointer types for any of the containers,
   - Containers are dedicated to a single object type,
   - Destruction of objects can be done manually, automatically in a background thread, or directly when the last references goes away (this can be set per container),
