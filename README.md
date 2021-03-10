@@ -3,13 +3,13 @@ Header-only library that offers cross platform tools and more usable functions t
 Crossplatform C++ library (c++17)
 
 ## Garbage collected containers with smart pointers:
-  - Thread-safe, no locks, uses compare and swap (CAS) instead,
   - Strong and Weak pointer types for any of the containers,
   - Containers are dedicated to a single object type,
   - Destruction of objects can be done manually, automatically in a background thread, or directly when the last references goes away (this can be set per container),
   - Cleaned up positions for containers like arrays will be reused on the next construction of an object.
   - Arrays still store objects like normal arrays (thread-safe, lock-free),
   - Arrays can have an encapsulating version that will automatically add more arrays (like deques/buckets),
+  - Arrays are thread-safe, no locks, uses compare and swap (CAS) instead,
   - Maps (using std unordered or ordered map for now),
   - these collections do not move objects around so it does not break/invalidate any references or pointers.
 ## Serializer
